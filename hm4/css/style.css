@@ -30,6 +30,7 @@ a{
       float: left;
       margin-left: 30px;
       margin-top: 34px;
+      display: block;
   }
   .menu a:hover{
       color: #1abc9c;
@@ -79,6 +80,7 @@ a{
 .product_img{
     width: 255px;
     height: 322px;
+    display: block;
 }
 .block_price:hover .name{
     background: #1abc9c;
@@ -86,6 +88,11 @@ a{
 .block_price:hover .price{
     background: #7fd9c7;
 }
+
+.block_price:hover img{
+    background:none;
+}
+    
 
 .item{
     width: 255px;
