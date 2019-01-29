@@ -63,6 +63,11 @@ a{
     margin-bottom: 100px;
     padding: 0;
 }
+.slider svg{
+    width: 40px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+}
 
 button{
     background-color: #55a190;
@@ -91,8 +96,8 @@ button svg {
     transform: rotate(180deg);
 }
 .slides{
-    margin: o;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     list-style: none;
 }
 .slides_item{
@@ -102,17 +107,18 @@ button svg {
 .slide_head{
     position: absolute;
     left: 430px;
-    top: 205px;
+    top: 192px;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 60px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
+    padding: 0px;
 }
 .slide_info{
     position: absolute;
     left: 431px;
-    bottom: 285px;
+    bottom: 278px;
     display: inline-block;
     list-style: none;
 }
@@ -214,14 +220,14 @@ button svg {
 
 /*overlay*/
 .overlay{
-    outline: 10px solid rgb(255, 255, 255, 0.592);
+    outline:10px solid rgb(255, 255, 255,0.592);
     background-color: rgb(0, 0, 0, 0.592);
     width: 235px;
     height: 264px;
     position: absolute;
     opacity: 0;
     top:10px;
-    left: 10px;
+    left:10px ;
     }
   
 .btn_left {
