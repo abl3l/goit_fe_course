@@ -1,0 +1,28 @@
+.contact_info{
+    width: 940px;
+    margin: 0 auto;
+    background: black;
+}
+.contact_info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+input{
+    width: 450px;
+    height: 50px;
+    border: none;
+}
+textarea{
+    width: 450px;
+    height: 200px;
+    border: none;
+}
+.input_box{
+    width: 455px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

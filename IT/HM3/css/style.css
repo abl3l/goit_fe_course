@@ -1,0 +1,100 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+/*menu*/
+.menu li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 24%;
+    margin-top: 75px;
+    font-size: 14px;
+    text-transform: uppercase; 
+    margin-bottom: 100px;
+}
+.menu a{
+    text-decoration: none;
+    color: #626262;
+}
+a:hover{
+    color: #03a9f4;
+}
+/*menu*/
+
+/*lifestyle*/
+.lifestyle a{
+    text-transform: uppercase;
+    color: #c7c1b6;
+    text-decoration: none;
+}
+.festival{
+    width: 420px;
+    display: inline-block;
+    padding-right: 28px;
+    margin-bottom: 130px;
+}
+.coffe{
+    width: 420px;
+    display: inline-block;
+    padding-left: 28px;
+    margin-bottom: 130px;
+}
+/*lifestyle*/
+
+/*photodiary*/
+.photodiary a{
+    text-transform: uppercase;
+    color: #c7c1b6;
+    text-decoration: none;
+}
+.dream{
+    width: 420px;
+    display: inline-block;
+    padding-right: 28px;
+    margin-bottom: 130px;
+}
+.alps{
+    width: 420px;
+    display: inline-block;
+    padding-left: 28px;
+    margin-bottom: 130px;
+}
+/*photodiary*/
+
+/*Music&travel*/
+.music_travel a{
+    text-transform: uppercase;
+    color: #c7c1b6;
+    text-decoration: none;
+}
+.music{
+    width: 420px;
+    display: inline-block;
+    padding-right: 28px;
+    margin-bottom: 53px;
+}
+.travel{
+    width: 420px;
+    display: inline-block;
+    padding-left: 28px;
+    margin-bottom: 53px;
+}
+/*Music&travel*/
+
+/*Button*/
+.button {
+    display: block;
+    width: 165px;
+    height: 60px;
+    border: 2px solid #626262;
+    text-align: center;
+    padding: 18px 10px 10px 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-decoration: none;
+    color: #626262;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/*Button*/
