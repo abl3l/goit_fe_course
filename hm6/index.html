@@ -6,8 +6,6 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
     <!--Menu-->
@@ -27,14 +25,14 @@
 
     <!--Services-->
     <section class="services_head">
-        <h2>We work with</h2>
-        <h3>amazing services</h3>
-        <section class="services">
+        <p class="title">We work with</p>
+        <h2>amazing services</h2>
+        <div id="services">
             <article class="services_item">
                 <div class="img_box"><img src="img/icon/ALARM.png" alt="alarm">
                 </div>
                 <div class="text_box">
-                <h5>photography</h5>
+                <h3>photography</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor.</p>
                 </div>
@@ -44,7 +42,7 @@
                 <div class="img_box"><img src="img/icon/LINE GRAPH.png" alt="alarm">
                 </div>
                 <div class="text_box">
-                <h5>web design</h5>
+                <h3>web design</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor.</p>
                 </div>
@@ -53,8 +51,8 @@
             <article class="services_item">
                 <div class="img_box"><img src="img/icon/COMPUTER.png" alt="alarm">
                 </div>
-                <div class="creativity">
-                <h5>photography</h5>
+                <div class="text_box">
+                <h3>creativity</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor.</p>
                 </div>
@@ -64,7 +62,7 @@
                 <div class="img_box"><img src="img/icon/BOOK.png" alt="alarm">
                 </div>
                 <div class="text_box">
-                <h5>seo</h5>
+                <h3>seo</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor.</p>
                 </div>
@@ -74,7 +72,7 @@
                 <div class="img_box"><img src="img/icon/HOUSE.png" alt="alarm">
                 </div>
                 <div class="text_box">
-                <h5>css/html</h5>
+                <h3>css/html</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor.</p>
                 </div>
@@ -84,29 +82,28 @@
                 <div class="img_box"><img src="img/icon/DIIGTAL.png" alt="alarm">
                 </div>
                 <div class="text_box">
-                <h5>digital</h5>
+                <h3>digital</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor.</p>
                 </div>
             </article>
-        </section>
+        </div>
     </section>
     <!--Services-->
 
     <!--Team-->
-    <section class="team_head">
-        <h2>Who we are</h2>
-        <h3>meet our team</h3>
-        <p>
+    <section class="team">
+        <p class="title">Who we are</p>
+        <h2>meet our team</h2>
+        <p class="title_text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-    </section>
-    <section class="team"> 
+    <div id="team"> 
         <article class="member">
             <div class="photo_box">
-                <img class="photo" src="img/Rectangle 1.png" alt="photo">
+                <img class="photo" src="img/Rectangle1.jpg" alt="photo">
                 <div class="card">
                 <a href="#" class="icon"><img src="img/icon/facebook.png" alt="facebook"></a>
                 <a href="#" class="icon"><img src="img/icon/twitter.png" alt="twitter"></a>
@@ -115,14 +112,14 @@
                 </div>
             </div>
            <div class="info">
-            <h5>matthew dix</h5>
+            <h3>matthew dix</h3>
             <p>graphic disign</p>
             </div>
         </article>
     
         <article class="member">
             <div class="photo_box">
-               <img class="photo" src="img/Rectangle 2.png" alt="photo">
+               <img class="photo" src="img/Rectangle2.jpg" alt="photo">
                <div class="card">
                 <a href="#" class="icon"><img src="img/icon/facebook.png" alt="facebook"></a>
                 <a href="#" class="icon"><img src="img/icon/twitter.png" alt="twitter"></a>
@@ -131,13 +128,13 @@
                </div>
             </div>
             <div class="info">
-                <h5>cristopher campbell</h5>
+                <h3>cristopher campbell</h3>
                 <p>branding/UX design</p>
             </div>
         </article>
         <article class="member">
             <div class="photo_box">
-                <img class="photo" src="img/Rectangle 3.png" alt="photo">
+                <img class="photo" src="img/Rectangle3.jpg" alt="photo">
                 <div class="card">
                 <a href="#" class="icon"><img src="img/icon/facebook.png" alt="facebook"></a>
                 <a href="#" class="icon"><img src="img/icon/twitter.png" alt="twitter"></a>
@@ -146,24 +143,23 @@
                 </div>
             </div>
             <div class="info">
-            <h5>Michael Fertig</h5>
+            <h3>Michael Fertig</h3>
             <p>Developer</p>
             </div>
         </article>
-    </section>
+    </div>
+</section>
     <!--Team-->
 
     <!--Footer-->
     <footer> 
         <hr>
         <section class="footer">
-           <p>© 2016 MoGo free PSD template by <span class="text_color">Laaqiq</span></p>
-           <div class="email_box">
-              <form  action="#" method="get">
-              <input id="email" type="email" name="name" placeholder="Your Email...">
-              <input class="button" type="submit" value = "subscribe">
+           <p>© 2016 MoGo free PSD template by <a class="text_color" href="">Laaqiq</a></p>
+           <form   action="#" method="get">
+            <input id="email" type="email" name="name" placeholder="Your Email...">
+            <input class="button" type="button" value = "subscribe">
             </form>
-           </div>
         </section>
     </footer>
     <!--Footer-->

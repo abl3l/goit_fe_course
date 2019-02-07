@@ -1,10 +1,13 @@
 html{
     box-sizing: border-box;
+    
 }
 *,
 *::before,
 *::after{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 body{
     width: 1200px;
@@ -30,7 +33,7 @@ body{
 .nav{
     text-decoration: none;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     color: #b3e9df;
     padding: 0px;
     margin: 0px;
@@ -56,29 +59,23 @@ body{
 /*Menu*/
 
 /*Services*/
-
-
-h2{
+.title{
     font-size: 24px;
-    font-family: 'Kaushan Script', cursive;
+    font-family: Kaushan Script;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
     padding-bottom: 25px;
     line-height: 1.2;
     font-weight: normal;
     color: #333333;
 }
-h3{
+h2{
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     text-transform: uppercase;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
     color: #333333;
 }
-h3:after{
+h2:after{
     content:'';
     display: block;
     width: 60px;
@@ -88,7 +85,7 @@ h3:after{
     margin-top: 40px;
     margin-bottom: 65px;
 }
-.services{
+#services{
     display: flex;
     flex-wrap: wrap;
     height: 250px;
@@ -111,37 +108,35 @@ flex-wrap: wrap;
 .img_box img{
     padding: 0px 30px 0px 20px; 
 }
-.services h5{
-    padding: 0px;
-    margin: 0px;
+#services h3{
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     text-transform: uppercase;
     font-weight: normal;
     color: #4d4d4d;
 }
-.services p{
+#services p{
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    font-family: Roboto;
     color: #cccccc;
+    line-height: 25px;
 }
+
 /*Services*/
 
 /*Team*/
-.team_head{
+.team{
     padding-top: 90px;
 }
-.team_head p{
+.title_text{
     text-align: center;
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     padding: 0px 125px 95px 125px;
-    margin: 0px;
     color: #999999;
+    line-height: 25px;
 }
-.team{
+#team{
     display: flex;
     justify-content: space-between;
 }
@@ -172,15 +167,13 @@ flex-wrap: wrap;
     left: 0px;
     opacity:0;
     transform: translate(0, 0);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in;
 }
-.member h5{
+.member h3{
     text-transform: uppercase;
     font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
     padding-top: 30px;
     font-weight: normal;
     color: #404040;
@@ -191,7 +184,7 @@ flex-wrap: wrap;
     height: 100%;
     object-fit: cover;
     transform: translate(0, 0);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.3s ease-in;
 }
 
 .photo_box:hover .card{
@@ -205,11 +198,9 @@ flex-wrap: wrap;
 
 .member p{
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     text-transform: capitalize;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
     padding-top: 15px;
     color: #acacac;
     font-style: italic;
@@ -239,6 +230,7 @@ flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
 }
 hr{
     width: 100%;
@@ -246,22 +238,21 @@ hr{
     background-color: #e5e5e5;
     height: 1px;
     border: none;
+    margin-bottom: 10px;
 }
-.email_box{
-    margin-right:-2px;
-    font-size: 0;
-}
+
 #email{
-    width: 247px;
+    width: 240px;
     height: 40px;
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto;
     font-style: italic;
-    border: 1px solid #e7e7e7;
+    border: solid 1px #e7e7e7;
     color: #e7e7e7;
-    padding: 13px;
     border-right: none;
-}
+    padding: 15px;
+    float: left;
+}    
 ::-webkit-input-placeholder {
     color:#d9d9d9
 
@@ -296,12 +287,11 @@ padding-right: 5px;
     text-transform: uppercase;
     background-color: #95e1d3;
     color: white;
-    border:solid #95e1d3;
-    padding: 0px;
-    cursor: pointer;
     border: none;
-    transform: translate(-2px,-1.5px);
-    border-radius: 2px;
+    cursor: pointer;
+    vertical-align: top;
+    padding: 0;
+    float: left;
 }
 .footer p{
     font-family:Montserrat;
@@ -310,5 +300,19 @@ padding-right: 5px;
 
 .text_color{
     color: #f9c6c6;
+    text-decoration: none;
 }
+/*clearfix*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .clearfix::before {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  /*clearfix*/
+
 /*Footer*/
