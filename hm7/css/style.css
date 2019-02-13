@@ -1,3 +1,37 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('./fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/montserrat-v12-latin-600.woff2') format('woff2'),
+         url('./fonts/montserrat-v12-latin-600.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    font-style: italic;
+    src: url('./fonts/Droid-Serif-Italic-V2.woff2') format('woff2'),
+         url('./fonts/Droid-Serif-Italic-V2.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'),
+         url('./fonts/roboto-slab-v7-latin-regular.woff') format('woff');
+  }
+
+
+
+
 html{
     box-sizing: border-box;
 }
@@ -5,6 +39,8 @@ html{
 *::before,
 *::after{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 body{
     margin: 0 auto;
@@ -21,10 +57,6 @@ header{
     margin-bottom: 125px;
     width: 940px;
 }
-ul{
-    padding: 0px;
-    margin: 0px;
-}    
 .menu{
     display: inline-block;
     text-decoration: none;
@@ -35,6 +67,9 @@ ul{
     text-transform: uppercase;
     padding-left: 40px;
     color: #222;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
 }
 
 .menu a:hover{
@@ -43,35 +78,48 @@ ul{
 /*Menu*/
 
 /*Services*/
-.services{
+.service_box{
     display: flex;
     justify-content: space-between;
     width: 940px;
     margin: 0 auto;
 }
 
-.service_head h1{
-    padding: 0px;
-    margin: 0px;
+.services h2{
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
-.service_head p{
+.title{
     text-align: center;
     padding-bottom: 40px;
+    font-family: 'Droid Serif', serif;;
+    font-size: 16px;
+    font-style: italic;
+    color: #777777;
 }
+
 .service{
     width: 290px;
     height: 230px;
-    margin-bottom: 105px;
+    margin-bottom: 105px; 
 }
-.service h4{
+.service h3{
     padding: 0;
     margin: 0;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 54px;
 }
 .service p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9b9b9b;
     text-align: center;
 }
 .img_box{
@@ -95,7 +143,7 @@ ul{
     width: 940px;
     margin: 0 auto;
 }
-.contact_head h1{
+.contact_bgc h2{
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -104,12 +152,16 @@ ul{
     color: #ffffff;
     padding-top: 110px;
 }
-.contact_head p{
+.contact_bgc p{
     text-align: center;
     margin: 0;
     padding: 0;
     padding-bottom:0px 125px 75px;
     color: #777777;
+    font-family: 'Droid Serif', serif;;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 75px;
 }
 .contact_info{
     display: flex;
@@ -118,18 +170,32 @@ ul{
     align-content: center;
 }
 
-.info{
-    width: 450px;
+input{
     height: 50px;
-    border-radius: 2px;
-    text-transform: uppercase;
+    padding: 0px 20px;
 }
 textarea{
     width: 450px;
     height: 200px;
     border: none;
+    padding: 15px 16px;
+    line-height: 22px;
+}
+input,textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.025em;
+    width: 450px;
     border-radius: 2px;
     text-transform: uppercase;
+    color: #c0c0c0;
+}
+
+input::placeholder,
+textarea::placeholder {
+    text-transform: uppercase;
+    color: rgb(187, 187, 187);
 }
 .input_box{
     width: 455px;
@@ -137,7 +203,7 @@ textarea{
     justify-content:  space-between;
     flex-direction: column;
 }
-.btn{
+button{
     width: 240px;
     height: 65px;
     background-color: #fed136;
@@ -145,8 +211,17 @@ textarea{
     border-radius: 2px;
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 30px;
-    margin-left: 350px;
+    margin: 0 auto;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 30px;
 }
-    
+input:focus:required:invalid{ 
+    outline: 2px solid red;
+}
+input:required:valid{ 
+    outline: 2px solid green; }
+
+

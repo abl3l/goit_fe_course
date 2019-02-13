@@ -33,7 +33,7 @@ body{
 .nav{
     text-decoration: none;
     font-size: 14px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: #b3e9df;
     padding: 0px;
     margin: 0px;
@@ -61,7 +61,7 @@ body{
 /*Services*/
 .title{
     font-size: 24px;
-    font-family: Kaushan Script;
+    font-family: 'Kaushan Script', cursive;
     text-align: center;
     padding-bottom: 25px;
     line-height: 1.2;
@@ -70,7 +70,7 @@ body{
 }
 h2{
     font-size: 30px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: #333333;
@@ -110,14 +110,14 @@ flex-wrap: wrap;
 }
 #services h3{
     font-size: 14px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     color: #4d4d4d;
 }
 #services p{
     font-size: 15px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     color: #cccccc;
     line-height: 25px;
 }
@@ -131,7 +131,7 @@ flex-wrap: wrap;
 .title_text{
     text-align: center;
     font-size: 15px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     padding: 0px 125px 95px 125px;
     color: #999999;
     line-height: 25px;
@@ -172,7 +172,7 @@ flex-wrap: wrap;
 .member h3{
     text-transform: uppercase;
     font-size: 15px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding-top: 30px;
     font-weight: normal;
@@ -198,7 +198,7 @@ flex-wrap: wrap;
 
 .member p{
     font-size: 15px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     text-transform: capitalize;
     text-align: center;
     padding-top: 15px;
@@ -245,7 +245,7 @@ hr{
     width: 240px;
     height: 40px;
     font-size: 15px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     border: solid 1px #e7e7e7;
     color: #e7e7e7;
@@ -294,7 +294,7 @@ padding-right: 5px;
     float: left;
 }
 .footer p{
-    font-family:Montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: #333333;
 }
 
