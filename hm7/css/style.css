@@ -91,6 +91,7 @@ header{
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    font-size: 40px;
 }
 .title{
     text-align: center;
@@ -151,6 +152,9 @@ header{
     text-transform: uppercase;
     color: #ffffff;
     padding-top: 110px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
 }
 .contact_bgc p{
     text-align: center;
