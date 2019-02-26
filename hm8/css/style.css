@@ -293,8 +293,11 @@ header{
     margin-bottom: 32px;
 }
 .one { order: 1; }
+
 .two { order: 3; }
+
 .three { order: 2;}
+
 .four { order: 4; }
     
 .other{
