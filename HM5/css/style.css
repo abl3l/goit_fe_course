@@ -85,8 +85,10 @@ button{
     height: 104px;
     z-index: 793;
     border: 0;
-    opacity: 0.61;
     cursor: pointer;
+}
+button:focus, button:hover{
+    opacity: 0.61;
 }
 .button_left{
     left: 30px;
