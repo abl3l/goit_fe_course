@@ -70,6 +70,23 @@ button:hover,button:focus{
     cursor: pointer;
 }
 
+
+.col-01 {width: 8.3333%;}
+.col-02 {width: 16.6666%;}
+.col-03 {width: 25%;}
+.col-04 {width: 33.3333%;}
+.col-05 {width: 41.6666%;}
+.col-06 {width: 50%;}
+.col-07 {width: 58.3333%;}
+.col-08 {width: 66.6666%;}
+.col-09 {width: 75%;}
+.col-10 {width: 83.3333%;}
+.col-11 {width: 91.6666%;}
+.col-12 {width: 100%;}
+.colbreak {
+    display: none
+}
+
 /*Header*/
 header{
     height: 540px;
@@ -142,8 +159,6 @@ header{
     text-align: center;
     line-height: 1.2;
     margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
 
 }
 .title button{
@@ -168,12 +183,12 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-.meet{
-    width: 320px;
+.partners{
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 auto;
 }
 .partner{
     width: 220px;
@@ -184,8 +199,9 @@ header{
     width: 122px;
     height: 122px;
     position: relative;
-    margin: 0 auto;
     margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
 }   
 .photo{
     display: block;
@@ -224,6 +240,7 @@ header{
     color: #989898;
     text-align: center;
     font-weight: 300;
+    margin-bottom: 30px;
 }
 .icon_color1{
     background: #ff4e50;
@@ -238,6 +255,7 @@ header{
     background: #4e73db;
   }
 .other{
+    display: block;
     width:282px;
     height: 40px;
     border: 2px solid #ff4e50;
@@ -251,95 +269,117 @@ header{
     margin-left: auto;
     margin-right: auto;
   }
-
-@media(min-width: 768px){
-.menu{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-content: center;
-}
-header{
-    width: 768px;
-    height: 700px;
-    background: url(../img/bg_tablet.jpg) 100% 100% no-repeat; 
-    background-size: cover; 
-    background-position: center;
-    margin-bottom: 105px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.title button{
-    width: 234px;
-}
-.meet{
-    width: 523px;
-}
-.partners {
-    width: 532px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.one{order: 1;}
-
-.two{order: 3;}
-
-.three{order: 2;}
-
-.four{order: 4;}
-
-.btn_box{
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-}
-.title h1{
-    width: 520px;
-    font-size: 52px;
-    margin-bottom: 20px;
-}
-.title p{
-        
-    width: 100%;
-    font-size: 23.99px;
-    margin-bottom: 36px;
-}
-.meet h2{
-    width:100% ;
-    margin-bottom: 32px;
-}
+@media (min-width: 768px) {
+    .col-md-01 {width: 8.3333%;}
+    .col-md-02 {width: 16.6666%;}
+    .col-md-03 {width: 25%;}
+    .col-md-04 {width: 33.3333%;}
+    .col-md-05 {width: 41.6666%;}
+    .col-md-06 {width: 50%;}
+    .col-md-07 {width: 58.3333%;}
+    .col-md-08 {width: 66.6666%;}
+    .col-md-09 {width: 75%;}
+    .col-md-10 {width: 83.3333%;}
+    .col-md-11 {width: 91.6666%;}
+    .col-md-12 {width: 100%;}
+    [class*="col-md-"] {padding: 0 0.625rem;}
+    .menu{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-content: center;
+    }
     
-.other{
-    width: 192px;
-}
+    header{
+        min-width: 768px;
+        height: 700px;
+        background: url(../img/bg_tablet.jpg) 100% 100% no-repeat; 
+        background-size: cover; 
+        background-position: center;
+        margin: 0 auto;
+        margin-bottom: 105px;
+        
+    }
+    .title button{
+        width: 234px;
+    }
+    .meet{
+        width: 768px;
+    }
+    .colbreak {
+        display: block;
+        width: 100%;
+    }
+    .one{order: 1;}
+    
+    .two{order: 4;}
+    
+    .three{order: 2;}
+    
+    .four{order: 5;}
+
+    .five{order:3;}
+    
+    .btn_box{
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title h1{
+        width: 520px;
+        font-size: 52px;
+        margin-bottom: 20px;
+    }
+    .title p{
+            
+        width: 100%;
+        font-size: 23.99px;
+        margin-bottom: 36px;
+    }
+    .meet h2{
+        width:100% ;
+        margin-bottom: 32px;
+    }
+        
+    .other{
+        width: 192px;
+    }
+    
 }
 @media(min-width:942px){
-header{
-    width: 100%;
-    background: url(../img/bgc.jpg)100% 100% no-repeat; 
-    background-size: cover; 
-    background-position: center;
-}
-.nav{
-    width: 942px;
-    margin: 0 auto;
-}
-.partners{
-    width: 942px;
-}
-.meet{
-    width: 942px;
-}
-.other{
-    width: 196px;
-}
-}
-
-
-
-
-
-
+    .col-lg-01 {width: 8.3333%;}
+    .col-lg-02 {width: 16.6666%;}
+    .col-lg-03 {width: 25%;}
+    .col-lg-04 {width: 33.3333%;}
+    .col-lg-05 {width: 41.6666%;}
+    .col-lg-06 {width: 50%;}
+    .col-lg-07 {width: 58.3333%;}
+    .col-lg-08 {width: 66.6666%;}
+    .col-lg-09 {width: 75%;}
+    .col-lg-10 {width: 83.3333%;}
+    .col-lg-11 {width: 91.6666%;}
+    .col-lg-12 {width: 100%;}
+    
+    header{
+        width: 100%;
+        background: url(../img/bgc.jpg)100% 100% no-repeat; 
+        background-size: cover; 
+        background-position: center;
+    }
+    .nav{
+        width: 942px;
+        margin: 0 auto;
+    }
+    .meet{
+        width: 942px;
+        margin: 0 auto;
+    }
+    .colbreak{
+        display: none;
+    }
+    .other{
+        width: 196px;
+    }
+    }
