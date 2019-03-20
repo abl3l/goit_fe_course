@@ -130,8 +130,6 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .title p{
     width: 220px;
@@ -142,8 +140,6 @@ header{
     text-align: center;
     line-height: 1.2;
     margin-bottom: 18px;
-    margin-left: auto;
-    margin-right: auto;
 
 }
 .title button{
@@ -165,8 +161,7 @@ header{
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 21.98px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 .meet{
     width: 320px;
@@ -248,8 +243,6 @@ header{
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 55px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
 @media(min-width: 768px){
@@ -265,9 +258,9 @@ header{
     background: url(../img/bg_tablet.jpg) 100% 100% no-repeat; 
     background-size: cover; 
     background-position: center;
+    margin: 0 auto;
     margin-bottom: 105px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 .title button{
     width: 234px;
