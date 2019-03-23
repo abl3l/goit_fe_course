@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.header{
+header{
     background: url(../img/bg.jpg) 100% 100% no-repeat;
     background-size: cover;
     background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
@@ -22,7 +22,7 @@
     margin-bottom: 50px;
 }
 @media(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:2dppx){
-    .header{
+    header{
     background: url(../img/bg@2x.jpg) 100% 100% no-repeat;
     background-size: cover;
     background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
@@ -42,7 +42,7 @@
 }
 }
 @media(-webkit-min-device-pixel-ratio:3), (-o-min-device-pixel-ratio:3/1), (min-resolution:288dpi), (min-resolution:3dppx){
-    .header{
+    header{
     background: url(../img/bg@3x.jpg) 100% 100% no-repeat;
     background-size: cover;
     background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
@@ -141,7 +141,7 @@
 }
 
 /*Services*/
-.servises_title-prev{
+.container_title-prev{
     font-size: 24px;
     color: #333;
     font-family: 'Kaushan Script';
@@ -152,14 +152,14 @@
     text-transform: capitalize;
     padding-bottom: 25px;
 }
-.servises_title{
+.container_title{
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: #333333;
 }
-h2:after{
+.container_title:after{
     content:'';
     display: block;
     width: 60px;
@@ -196,7 +196,7 @@ display: flex;
     flex-wrap: wrap;
 }
 
-.services_item-img{
+.services_item-icon{
     width: 80px;
     height: 80px;
     fill: #95e1d3;
@@ -245,7 +245,7 @@ display: flex;
 }
 
 
-.team_title_after{
+.team_title-after{
     text-align: center;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
@@ -407,7 +407,7 @@ display: flex;
         -ms-flex-align: center;
             align-items: center;
 }
-hr{
+.footer_hr{
     width: 100%;
     color: #e5e5e5;
     background-color: #e5e5e5;
@@ -468,12 +468,12 @@ padding-right: 5px;
     padding: 0;
     float: left;
 }
-.footer p{
+.footer text{
     font-family: 'Montserrat', sans-serif;
     color: #333333;
 }
 
-.text_color{
+.footer_text-link{
     color: #f9c6c6;
     text-decoration: none;
 }
@@ -490,7 +490,3 @@ padding-right: 5px;
   }
   /*clearfix*/
 /*Footer*/
-
-@media(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:2dppx){
-
-}
