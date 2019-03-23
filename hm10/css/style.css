@@ -1,31 +1,75 @@
-html{
-    box-sizing: border-box;
-    
-}
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
 *{
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-}
-.head{
-    background: url(/img/bgc.jpg) 100% 100% no-repeat;
+
+.header{
+    background: url(../img/bg.jpg) 100% 100% no-repeat;
     background-size: cover;
+    background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
+    url(../img/bg.jpg);
+    background:-webkit-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:-o-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
     background-position: center;
     height: 1000px;
     margin-bottom: 50px;
 }
+@media(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:2dppx){
+    .header{
+    background: url(../img/bg@2x.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
+    url(../img/bg@2x.jpg);
+    background:-webkit-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:-o-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background-position: center;
+
+}
+}
+@media(-webkit-min-device-pixel-ratio:3), (-o-min-device-pixel-ratio:3/1), (min-resolution:288dpi), (min-resolution:3dppx){
+    .header{
+    background: url(../img/bg@3x.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
+    url(../img/bg@3x.jpg);
+    background:-webkit-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:-o-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background-position: center;
+}
+}
 .nav{
     width: 1200px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-between;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
     padding-top: 40px;
     padding-bottom: 165px;
 }
@@ -40,6 +84,12 @@ a{
     text-transform: uppercase;
     padding: 0 30px;
     font-weight: 400;
+}
+.nav_item-icon{
+    fill: #fff;
+}
+.nav_item-icon:hover{
+    fill: #fce38a;
 }
 .nav_item:hover{
     color: #fce38a;
@@ -121,24 +171,42 @@ h2:after{
     margin-bottom: 65px;
 }
 .services{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 250px;
-    align-content: space-between;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
 }
 .services_item{
     width:380px;
     height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0 10px;
 }
 .services_item-box{
+width: 300px;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .services_item-img{
-    padding: 0px 30px 0px 20px; 
+    width: 80px;
+    height: 80px;
+    fill: #95e1d3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .services_item-title{
     font-size: 14px;
@@ -187,8 +255,12 @@ flex-wrap: wrap;
     line-height: 25px;
 }
 .team{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .team_member{
     width: 380px;
@@ -206,18 +278,29 @@ flex-wrap: wrap;
 .team_card{
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138,0.5) 0%, rgb(243,129,129,0.5) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138,0.5) 0%, rgb(243,129,129,0.5) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(252,227,138,0.5) 0%, rgb(243,129,129,0.5) 100%);
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     top: 0px;
     left: 0px;
     opacity:0;
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
     transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 .team_info-name{
     text-transform: uppercase;
@@ -232,17 +315,28 @@ flex-wrap: wrap;
 .team_photo{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transform: translate(0, 0);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
     transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .team_photo-box:hover .team_card{
     opacity: 1;
-    transform: translate(-10px,-10px);
+    -webkit-transform: translate(-10px,-10px);
+        -ms-transform: translate(-10px,-10px);
+            transform: translate(-10px,-10px);
 }
 .team_photo-box:hover .team_photo{
-    transform: translate(-10px,-10px);
+    -webkit-transform: translate(-10px,-10px);
+        -ms-transform: translate(-10px,-10px);
+            transform: translate(-10px,-10px);
 }
 
 
@@ -256,29 +350,63 @@ flex-wrap: wrap;
     font-style: italic;
 }
 
-.team_card-icon{
+.team_card--link{
+    position: relative;
     display: block;
     background-color: #fce38a;
     width: 55px;
     height: 55px;
     margin:0px 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
-
-.team_card-icon:hover{
-    background-color: #95e1d3;
+.teem_card--icon{
+    fill: #f38181;
+}
+.teem_card--icon-1{
+    width: 13px;
+    height: 26px;
+}
+.teem_card--icon-2{
+    width: 26px;
+    height: 22px;
+}
+.teem_card--icon-3{
+    width: 21px;
+    height: 26px;
+}
+.teem_card--icon-4{
+    width: 26px;
+    height: 26px;
+}
+.team_card--link:hover{
+    background: #f38181
+}
+.team_card--link:hover .teem_card--icon{
+    fill: #fff;
 }
 /*Team*/
 
 /*Footer*/
 .footer{
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 10px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 hr{
     width: 100%;
@@ -362,5 +490,8 @@ padding-right: 5px;
     display: block;
   }
   /*clearfix*/
-
 /*Footer*/
+
+@media(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:2dppx){
+
+}

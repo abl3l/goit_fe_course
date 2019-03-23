@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/fonts/fonts.css">
 </head>
 <body>
-    <header class="head">
+    <header class="header">
         <nav class="nav">
             <a href="#" class="nav_logo"><img src="img/logo.png" alt="logo"></a>
             <ul class="nav_menu">
@@ -19,8 +19,8 @@
                 <li class="nav_menu--list"><a class="nav_item" href="">work</a></li>
                 <li class="nav_menu--list"><a class="nav_item" href="">blog</a></li>
                 <li class="nav_menu--list"><a class="nav_item" href="">contact</a></li>
-                <li class="nav_menu--list"><a class="nav_item" href=""></a></li>
-                <li class="nav_menu--list"><a class="nav_item" href=""></a></li>
+                <li class="nav_menu--list"><a class="nav_item" href=""><svg width="18px" height="16px" class="nav_item-icon"><use href="img/icon/sprite.svg#basket"></use></svg></a></li>
+                <li class="nav_menu--list"><a class="nav_item" href=""><svg width="18px" height="18px" class="nav_item-icon"><use href="img/icon/sprite.svg#glass"></use></svg></a></li>
             </ul>
         </nav>
         <p class="head_title--prev"> creative template</p>
@@ -28,12 +28,11 @@
         <button class="head_button"> learn more</button>
 </header>
 <main class="container">
-<section class="services_head">
         <p class="servises_title-prev">We work with</p>
         <h2 class="servises_title">amazing services</h2>
         <div class="services">
             <article class="services_item">
-                <div class="services_item-img"><img src="img/icon/ALARM.png" alt="alarm">
+                <div class="services_item-img"><svg width="32px" height="32px" class="servisec_icon"><use href="img/icon/sprite.svg#alarm"></use></svg>
                 </div>
                 <div class="services_item-box">
                 <h3 class="services_item-title">photography</h3>
@@ -43,7 +42,7 @@
             </article>
             
             <article class="services_item">
-                <div class="services_item-img"><img src="img/icon/LINE_GRAPH.png" alt="alarm">
+                <div class="services_item-img"><svg width="32px" height="32px" class="servisec_icon"><use href="img/icon/sprite.svg#line_graph"></use></svg>
                 </div>
                 <div class="services_item-box">
                 <h3 class="services_item-title">web design</h3>
@@ -53,7 +52,7 @@
             </article>
             
             <article class="services_item">
-                <div class="iservices_item-img"><img src="img/icon/COMPUTER.png" alt="alarm">
+                <div class="services_item-img"><svg width="32px" height="32px" class="servisec_icon"><use href="img/icon/sprite.svg#computer"></use></svg>
                 </div>
                 <div class="services_item-box">
                 <h3 class="services_item-title">creativity</h3>
@@ -63,7 +62,7 @@
             </article>
             
             <article class="services_item">
-                <div class="services_item-img"><img src="img/icon/BOOK.png" alt="alarm">
+                <div class="services_item-img"><svg width="32px" height="32px" class="servisec_icon"><use href="img/icon/sprite.svg#book"></use></svg>
                 </div>
                 <div class="services_item-box">
                 <h3 class="services_item-title">seo</h3>
@@ -73,7 +72,7 @@
             </article>
             
             <article class="services_item">
-                <div class="services_item-img"><img src="img/icon/HOUSE.png" alt="alarm">
+                <div class="services_item-img"><svg width="32px" height="32px" class="servisec_icon"><use href="img/icon/sprite.svg#home"></use></svg>
                 </div>
                 <div class="services_item-box">
                 <h3 class="services_item-title">css/html</h3>
@@ -83,7 +82,7 @@
             </article>
             
             <article class="services_item">
-                <div class="services_item-img"><img src="img/icon/DIIGTAL.png" alt="alarm">
+                <div class="services_item-img"><svg width="32px" height="32px" class="servisec_icon"><use href="img/icon/sprite.svg#digital"></use></svg>
                 </div>
                 <div class="services_item-box">
                 <h3 class="services_item-title">digital</h3>
@@ -92,7 +91,6 @@
                 </div>
             </article>
         </div>
-    </section>
     <!--Services-->
 
     <!--Team-->
@@ -107,12 +105,23 @@
     <div class="team"> 
         <article class="team_member">
             <div class="team_photo-box">
-                <img class="team_photo" src="img/Rectangle1.jpg" alt="photo">
+                <img class="team_photo" 
+                src="./img/img1.jpg" alt="team member photo"
+                srcset="./img/img1@2x.jpg 2x,
+                        ./img/img1@3x.jpg 3x">
                 <div class="team_card">
-                <a href="#" class="team_card-icon"><img src="img/icon/facebook.png" alt="facebook"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/twitter.png" alt="twitter"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/pinterest.png" alt="pinterest"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/instagram.png" alt="instagram"></a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-1 "><use href="img/icon/sprite.svg#facebook"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-2"><use href="img/icon/sprite.svg#twitter"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-3"><use href="img/icon/sprite.svg#pinterest"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-4"><use href="img/icon/sprite.svg#instagram"></use></svg>
+                    </a>
                 </div>
             </div>
            <div class="team_info">
@@ -123,13 +132,24 @@
     
         <article class="team_member">
             <div class="team_photo-box">
-               <img class="team_photo" src="img/Rectangle2.jpg" alt="photo">
-               <div class="team_card">
-                <a href="#" class="team_card-icon"><img src="img/icon/facebook.png" alt="facebook"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/twitter.png" alt="twitter"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/pinterest.png" alt="pinterest"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/instagram.png" alt="instagram"></a>
-               </div>
+                <img class="team_photo" 
+                src="./img/img2.jpg" alt="team member photo"
+                srcset="./img/img2@2x.jpg 2x,
+                            ./img/img2@3x.jpg 3x">
+                <div class="team_card">
+                    <a href="#" class="team_card--link">
+                    <svg class="teem_card--icon teem_card--icon-1 "><use href="img/icon/sprite.svg#facebook"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-2"><use href="img/icon/sprite.svg#twitter"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-3"><use href="img/icon/sprite.svg#pinterest"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-4"><use href="img/icon/sprite.svg#instagram"></use></svg>
+                    </a>
+                </div>
             </div>
             <div class="team_info">
                 <h3 class="team_info-name" >cristopher campbell</h3>
@@ -138,12 +158,23 @@
         </article>
         <article class="team_member">
             <div class="team_photo-box">
-                <img class="team_photo" src="img/Rectangle3.jpg" alt="photo">
+                <img class="team_photo" 
+                src="./img/img3.jpg" alt="team member photo"
+                srcset="./img/img3@2x.jpg 2x,
+                        ./img/img3@3x.jpg 3x">
                 <div class="team_card">
-                <a href="#" class="team_card-icon"><img src="img/icon/facebook.png" alt="facebook"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/twitter.png" alt="twitter"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/pinterest.png" alt="pinterest"></a>
-                <a href="#" class="team_card-icon"><img src="img/icon/instagram.png" alt="instagram"></a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-1 "><use href="img/icon/sprite.svg#facebook"></use></svg>
+                            </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-2"><use href="img/icon/sprite.svg#twitter"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-3"><use href="img/icon/sprite.svg#pinterest"></use></svg>
+                    </a>
+                    <a href="#" class="team_card--link">
+                        <svg class="teem_card--icon teem_card--icon-4"><use href="img/icon/sprite.svg#instagram"></use></svg>
+                    </a>
                 </div>
             </div>
             <div class="team_info">
@@ -168,6 +199,5 @@
     </footer>
     <!--Footer-->
 </main>
-    
 </body>
 </html>
