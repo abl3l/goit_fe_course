@@ -354,4 +354,19 @@
 
   button:hover, button:focus {
     cursor: pointer;
+  }
+  
+    html{
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      
+  }
+  *,
+  *::before,
+  *::after{
+      -webkit-box-sizing: inherit;
+              box-sizing: inherit;
+  }
+  a{
+    text-decoration: none;
 }
