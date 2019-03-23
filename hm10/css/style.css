@@ -84,6 +84,7 @@ header{
     padding: 0 30px;
     font-weight: 400;
 }
+
 .nav_item-icon{
     fill: #fff;
 }
@@ -92,6 +93,14 @@ header{
 }
 .nav_item:hover{
     color: #fce38a;
+}
+.nav_item:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    margin-top: 10px;
 }
 .nav_item:hover::after{
     content:'';
