@@ -1,0 +1,138 @@
+.team{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.team_member{
+    width: 380px;
+    height: 625px;
+}
+
+.team_photo-box{
+    background-color: rgb(149, 225, 211);
+    width: 380px;
+    height: 470px;
+    position: relative;
+    cursor: pointer;
+}
+
+.team_card{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138,0.5) 0%, rgb(243,129,129,0.5) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138,0.5) 0%, rgb(243,129,129,0.5) 100%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity:0;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+.team_info-name{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: normal;
+    color: #404040;
+}
+
+.team_photo{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.team_photo-box:hover .team_card{
+    opacity: 1;
+    -webkit-transform: translate(-10px,-10px);
+        -ms-transform: translate(-10px,-10px);
+            transform: translate(-10px,-10px);
+}
+.team_photo-box:hover .team_photo{
+    -webkit-transform: translate(-10px,-10px);
+        -ms-transform: translate(-10px,-10px);
+            transform: translate(-10px,-10px);
+}
+
+
+.team_info-prof{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 15px;
+    color: #acacac;
+    font-style: italic;
+}
+
+.team_card--link{
+    position: relative;
+    display: block;
+    background-color: #fce38a;
+    width: 55px;
+    height: 55px;
+    margin:0px 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.teem_card--icon{
+    fill: #f38181;
+}
+.teem_card--icon-1{
+    width: 13px;
+    height: 26px;
+}
+.teem_card--icon-2{
+    width: 26px;
+    height: 22px;
+}
+.teem_card--icon-3{
+    width: 21px;
+    height: 26px;
+}
+.teem_card--icon-4{
+    width: 26px;
+    height: 26px;
+}
+.team_card--link:hover{
+    background: #f38181
+}
+.team_card--link:hover .teem_card--icon{
+    fill: #fff;
+}

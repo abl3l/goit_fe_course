@@ -1,0 +1,58 @@
+.page_header{
+    background: url(../img/bg.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
+    url(../img/bg.jpg);
+    background:-webkit-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:-o-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg.jpg);
+    background-position: center;
+    height: 1000px;
+    margin-bottom: 50px;
+}
+@media(-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2/1), (min-resolution:2dppx){
+    .page_header{
+    background: url(../img/bg@2x.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
+    url(../img/bg@2x.jpg);
+    background:-webkit-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:-o-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@2x.jpg);
+    background-position: center;
+
+}
+}
+@media(-webkit-min-device-pixel-ratio:3), (-o-min-device-pixel-ratio:3/1), (min-resolution:288dpi), (min-resolution:3dppx){
+    .page_header{
+    background: url(../img/bg@3x.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    background:-webkit-gradient( linear, left top, right top, from(rgb(252,227,138,0.9)), to(rgb(243,129,129,0.9))),
+    url(../img/bg@3x.jpg);
+    background:-webkit-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:-o-linear-gradient( left, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background:linear-gradient( 90deg, rgb(252,227,138,0.9) 0%, rgb(243,129,129,0.9) 100%),
+    url(../img/bg@3x.jpg);
+    background-position: center;
+}
+}

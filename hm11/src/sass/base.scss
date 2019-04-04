@@ -1,0 +1,35 @@
+button:hover, button:focus{
+cursor: pointer;
+}
+  
+html{
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+-webkit-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+a{
+text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*clearfix*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .clearfix::before {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  /*clearfix*/
+/*Footer*/

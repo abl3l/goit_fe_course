@@ -1,0 +1,28 @@
+.container_title-prev{
+    font-size: 24px;
+    color: #333;
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    padding-bottom: 25px;
+}
+.container_title{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+}
+.container_title:after{
+    content:'';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background:#f38181;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
