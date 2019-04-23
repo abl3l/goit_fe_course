@@ -171,7 +171,7 @@ header{
     text-transform: uppercase;
     text-align: center;
     color: #333333;
-    font-weight: 800;
+    font-weight: 700;
 }
 .container__title:after{
     content:'';
@@ -259,7 +259,7 @@ display: flex;
     text-align: center;
     color: #333333;
     line-height: 1.2;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .team__title::after{
