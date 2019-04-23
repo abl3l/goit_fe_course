@@ -7,25 +7,24 @@ const shippingJamaica = 120;
 
 deliveryCountry = prompt('Enter delivery country');
 if (!deliveryCountry){console.log('Canceled by user!');}
-switch(deliveryCountry)//.toLowerCase()
-{
-    case 'China':
+switch(deliveryCountry.toLowerCase()){
+    case 'china':
     console.log('Shipping to ${deliveryCountry} will cost ${shippingChina} credits');
     break;
     
-    case 'SouthAmerica':
+    case 'southamerica':
     console.log('Shipping to ${deliveryCountry} will cost ${shippingSouthAmerica} credits');
     break;
     
-    case 'Australia':
+    case 'australia':
     console.log('Shipping to ${deliveryCountry} will cost ${shippingAustralia} credits');
     break;
     
-    case 'India':
+    case 'india':
     console.log('Shipping to ${deliveryCountry} will cost ${shippingIndia} credits');
     break;
     
-    case 'Jamaica':
+    case 'jamaica':
     console.log('Shipping to ${deliveryCountry} will cost ${shippingJamaica} credits');
     break;
 
