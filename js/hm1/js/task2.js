@@ -8,7 +8,7 @@ if (!amount)
 {console.log('Canceled by user!');}
 else if (amount === String)
 {console.log('Canceled by user!');}
-else {totalPrice=pricePerDroid * amount;
+else {totalPrice=pricePerDroid * Math.round(amount);
     if (totalPrice <= 0){
         console.log('Insufficient funds in the account!');
     }else if (totalPrice > credits){
