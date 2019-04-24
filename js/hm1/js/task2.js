@@ -4,14 +4,10 @@ let totalPrice;
 let amount;
 
 amount = prompt('How many droids do you want to buy?');
-if (!amount)
+if (amount === null,' ',"0")
 {console.log('Canceled by user!');}
-else if (amount === String)
-{console.log('Canceled by user!');}
-else {totalPrice=pricePerDroid * Math.round(amount);
-    if (totalPrice <= 0){
-        console.log('Insufficient funds in the account!');
-    }else if (totalPrice > credits){
+else {totalPrice=pricePerDroid *(amount);
+    if (totalPrice > credits){
         console.log('Insufficient funds in the account!');
     }//else if (totalPrice = NaN){
         //console.log('Insufficient funds in the account!');} 

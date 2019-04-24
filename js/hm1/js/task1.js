@@ -2,7 +2,7 @@ const ADMIN_PASSWORD = 'm4ng0h4ckz';
 let password;
 let message;
 password = prompt ('Enter password');
-if (!password){
+if (password === null,' ',"0"){
     message = 'Canceled by user!';
 }else if (password === ADMIN_PASSWORD){
     message = 'Welcome!';
