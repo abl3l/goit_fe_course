@@ -8,7 +8,8 @@ const shippingJamaica = 120;
 deliveryCountry = prompt('Enter delivery country');
 if (!deliveryCountry){
     console.log('Canceled by user!');}
-switch(deliveryCountry.toLowerCase()){
+    else if (deliveryCountry = deliveryCounty.toLowerCase())
+switch(deliveryCountry){
     case 'china':
     console.log('Shipping to ${deliveryCountry} will cost ${shippingChina} credits');
     break;
