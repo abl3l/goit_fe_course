@@ -12,7 +12,7 @@ do{
         input = Number(input);
         numbers.push(input);
     }    
-}while(input);
+}while(input !== null);
 if(numbers.length){
     for(const value of numbers){
         total += value;
