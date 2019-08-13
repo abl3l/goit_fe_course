@@ -20,7 +20,7 @@ const NOTE_ACTIONS = {
   DECREASE_PRIORITY: 'decrease-priority',
 };
 
-const initialNotes = [
+const initialNoes = [
   {
     id: 'id-1',
     title: 'JavaScript essentials',
@@ -48,70 +48,53 @@ const initialNotes = [
     body:
       "Winter is coming! Need some really warm clothes: shoes, sweater, hat, jacket, scarf etc. Maybe should get a set of sportwear as well so I'll be able to do some excercises in the park.",
     priority: PRIORITY_TYPES.LOW,
-  },
+  },  
 ];
-const pageHeader = document.createElement('header');
-pageHeader.classList.add ('page-header');
 
-const logo = document.createElement('h1');
-logo.classList.add('.logo');
-pageHeader.append(logo);
+const ref = {
+  ul: document.querySelector('.note-list'),
+};
 
-const logoLink = document.createElement('a');
-logoLink.classList.add('logo__link');
-logoLink.textContent = 'Notepad';
-logo.append(logoLink);
+const createElement = (tag, className) => {
+  const createElement = document.createElement(tag);
+  createElement.classList.add(className);
+  return createElement;
+};
 
-const logoImg = document.createElement('img');
-logoImg.classList.add('logo__image');
-logoLink.prepend(logoImg);
+const append = (parent, child) => {
+  const append = (parent).append(child);
+  return append;
+};
 
-const searchForm = document.createElement('form');
-searchForm.classList.add('.searchForm');
-pageHeader.append(searchForm);
+const createNoteListItems = (title, body) => {
+  const noteListItem = createElement('li', 'note-list__item');
+  append('ref.ul', 'noteListItem')
 
-const searchFormInput = document.createElement('input');
-searchFormInput.classList.add('.search-form__input');
-searchForm.append(searchFormInput);
+  const note = createElement('div', 'note');
+  noteListItem.append(note);
 
-const searchFormIcon = document.createElement('i');
-searchFormIcon.classList.add('.material-icons,.search-form__icon');
-searchFormIcon.textContent = 'search';
-searchForm.append(searchFormIcon);
+  const noteContent = createElement('div', 'note__content');
+  append('note', 'noteContent');
 
-console.log(pageHeader);
+  const noteTitle = createElement('h2', 'note__title');
+  append('noteContent', 'noteTitle');
+  noteTitle.textContent = title;
+  
+  const noteBody = createElement('p' ,'note__body');
+  append('noteContent', 'note__body');
+  noteBody.textContent = body;
 
-const container = document.createElement('main');
-container.classList.add('.container');
+  return noteListItems;
+};
 
-const noteEditor = document.createElement('form');
-noteEditor.classList.add('.note-editor');
-container.append(noteEditor);
+const createNoteFooter = (priority) => {
+  const noteFooter = createElement('footer','note__footer');
 
-const noteEditorLabel = document.createElement('label');
-noteEditorLabel.classList.add('.note-editor__label');
-noteEditor.append(noteEditorLabel);
+  const NoteSection = createElement('section','note__section');
+};
 
-const noteEditorFieldName = document.createElement('span');
-noteEditorFieldName.classList.add('.note-editor__field-nam');
-noteEditorLabel.append(noteEditorFieldName);
 
-const noteEditorLabelInput = document.createElement('input');
-   noteEditorLabelInput.classList.add('.note-editor__input');
-noteEditorLabel.append(noteEditorLabelInput);
-console.log(container);
 
-const noteEditorInput= document.createElement('textarea');
-noteEditorInput.classList.add('.note-editor__input');
-.append()
-
-const btn= document.createElement('button');
-button.classList.add('.btn');
-.append()
-
-const  noteList = document.createElement('ul');
-noteList.classList.add('.note-list');
-.append()
 
 
 
