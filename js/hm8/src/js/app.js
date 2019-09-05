@@ -19,8 +19,59 @@ const NOTE_ACTIONS = {
   INCREASE_PRIORITY: 'increase-priority',
   DECREASE_PRIORITY: 'decrease-priority',
 };
+class Notepad {
+  constructor(notes = [{id, title, body, priority}]) {
+    this._notes = notes;
+  }
 
-const initialNoes = [
+  get notes() {
+    return this._notes;
+  }
+
+  findNoteById(id) {
+    return this.notes[this.notes.findIndex(note => note.id === id)];
+  }
+
+  saveNote(note) {
+    this.notes.push(note);
+    return note;
+  }
+
+  deleteNote(id) {
+    this.notes.splice(this.notes.findIndex(note => note.id === id), 1);
+  }
+
+  updateNoteContent(id, updatedContent) {
+    return Object.assign(this.findNoteById(id), updatedContent);
+  }
+
+  updateNotePriority(id, priority) {
+    return (this.findNoteById(id).priority = priority);
+  }
+
+  filterNotesByQuery(query) {
+    return this.notes.filter(
+      note =>
+        note.title.toLowerCase().includes(query.toLowerCase()) ||
+        note.body.toLowerCase().includes(query.toLowerCase())
+    );
+  }
+
+  filterNotesByPriority(priority) {
+    return this.notes.filter(note => note.priority === priority);
+  }
+
+  static get Priority() {
+    return {LOW: 0, NORMAL: 1, HIGH: 2};
+  }
+};
+const createElement = (tag, className) => {
+  const createElement = document.createElement(tag);
+  createElement.classList.add(className);
+  return createElement;
+};
+
+const initialNotes = [
   {
     id: 'id-1',
     title: 'JavaScript essentials',
@@ -51,51 +102,79 @@ const initialNoes = [
   },  
 ];
 
-const ref = {
-  ul: document.querySelector('.note-list'),
-};
+const notepad = new Notepad(initialNotes);
 
-const createElement = (tag, className) => {
-  const createElement = document.createElement(tag);
-  createElement.classList.add(className);
-  return createElement;
-};
-
-const append = (parent, child) => {
-  const append = (parent).append(child);
-  return append;
-};
-
-const createNoteListItems = (title, body) => {
-  const noteListItem = createElement('li', 'note-list__item');
-  append('ref.ul', 'noteListItem')
-
-  const note = createElement('div', 'note');
-  noteListItem.append(note);
-
-  const noteContent = createElement('div', 'note__content');
-  append('note', 'noteContent');
-
-  const noteTitle = createElement('h2', 'note__title');
-  append('noteContent', 'noteTitle');
-  noteTitle.textContent = title;
+const createNoteContent = (title,body) => {
+  const noteContent = createElement('div','note__content');
   
-  const noteBody = createElement('p' ,'note__body');
-  append('noteContent', 'note__body');
+  const noteTitle = createElement('h2','note__title'); 
+  noteTitle.textContent = title; 
+
+  const noteBody = createElement('p','note__body'); 
   noteBody.textContent = body;
 
-  return noteListItems;
+  noteContent.append(noteTitle, noteBody)
+  
+  return noteContent;
 };
 
-const createNoteFooter = (priority) => {
+const createBtn = (dataAction, iconType) => {
+  const btn = createElement('button','action');
+  btn.dataset.action = dataAction;
+
+  const btnIcon = createElement('i','material-icons');
+  btnIcon.classList.add('action__icon');
+  btnIcon.textContent = iconType;
+
+  btn.append(btnIcon);
+  
+  return btn;
+}
+
+const createNoteFooter = priority => {
+
   const noteFooter = createElement('footer','note__footer');
 
-  const NoteSection = createElement('section','note__section');
-};
+  const prioritySection = createElement('section','note__section');
 
+  const incPriorityBtn = createBtn(NOTE_ACTIONS.INCREASE_PRIORITY,ICON_TYPES.ARROW_UP);
 
+  const decrPriorityBtn = createBtn(NOTE_ACTIONS.DECREASE_PRIORITY,ICON_TYPES.ARROW_DOWN);
 
+  const notePriority = createElement('span','note__priority');
+  notePriority.textContent = priority;
 
+  prioritySection.append(incPriorityBtn,decrPriorityBtn,notePriority);
 
+  const editSection = createElement('section','note__section');
+  const editBtn = createBtn(NOTE_ACTIONS.EDIT,ICON_TYPES.EDIT);
+  const deleteBtn = createBtn(NOTE_ACTIONS.DELETE,ICON_TYPES.DELETE);
 
+  editSection.append(editBtn,deleteBtn)
+  
+  noteFooter.append(prioritySection,  editSection);
+  
+  return noteFooter;
+  };
 
+  const createListItem = ({ id, title, body, priority }) => {
+    const noteListItem = createElement('li','note-list__item');
+    noteListItem.dataset.id = id;
+  
+    const note = document.createElement('div','note');
+  
+    note.append(createNoteContent(title, body),createNoteFooter(priority));
+    noteListItem.append(note);
+  
+    return noteListItem;
+  };
+
+ const renderNoteList = (listRef, notes) => {
+  const noteList = notes.map(note => createListItem(note))
+  listRef.append(...noteList);
+  return listRef;
+ };
+
+ const ref = document.querySelector('.note-list');
+ 
+ renderNoteList(ref,initialNotes);
