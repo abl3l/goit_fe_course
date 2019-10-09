@@ -3,14 +3,6 @@ export default class Notepad {
       this._notes = notes;
     }
   
-    static generateUniqueId = () =>
-    Math.random()
-      .toString(36)
-      .substring(2, 15) +
-    Math.random()
-      .toString(36)
-      .substring(2, 15);
-  
     get notes() {
       return this._notes;
     }

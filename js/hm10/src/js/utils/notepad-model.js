@@ -2,15 +2,7 @@ export default class Notepad {
     constructor(notes = [{id, title, body, priority}]) {
       this._notes = notes;
     }
-  
-    static generateUniqueId = () =>
-    Math.random()
-      .toString(36)
-      .substring(2, 15) +
-    Math.random()
-      .toString(36)
-      .substring(2, 15);
-  
+
     get notes() {
       return this._notes;
     }
