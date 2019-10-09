@@ -13,8 +13,7 @@ module.exports = ({ mode = 'production' }) =>
       context: path.resolve(__dirname, 'src'),
       entry: './index.js',
       output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, "dist"),
       },
       module: {
         rules: [
